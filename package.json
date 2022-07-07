@@ -8,7 +8,8 @@
     "dbDrop": "npx sequelize db:drop",
     "migrate": "npx sequelize db:migrate",
     "migrateUndo": "npx sequelize db:migrate:undo:all",
-    "seed": "npx sequelize db:seed:all",
+    "seed": "npx sequelize db:seed",
+    "seedUsers": "npx sequelize db:seed --seed 20220707022033-seed-user.js",
     "seedUndo": "npx sequelize db:seed:undo:all"
   },
   "dependencies": {

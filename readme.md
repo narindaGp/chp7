@@ -19,13 +19,13 @@ npm run migrate
 
 ### Seed data users dan biodata
 ```terminal
-npm run seed
+npm run seedUsers
 ```
 mohon diperhatikan seed ini hanya bisa dilakukan sekali di awal database dan migration dibuat karena user Id yang dibuat masuh statis
 
 ### Restart server
 ```terminal
-npm dbDrop
+npm run dbDrop
 npm run dbCreate
 npm run migrate
 npm run seed
