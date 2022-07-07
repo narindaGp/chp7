@@ -1,0 +1,92 @@
+{
+  "data": [
+    {
+      "UserId": 1,
+      "firstname": "Franky",
+      "lastname": "Mash",
+      "gender": "male",
+      "place": "seed",
+      "dateOfBirth":"1996-05-19"
+    },
+    {
+      "UserId": 2,
+      "firstname": "Saree",
+      "lastname": "Davern",
+      "gender": "female",
+      "place": "seed",
+      "dateOfBirth":"1981-08-03"
+    },
+    {
+      "UserId": 3,
+      "firstname": "Bea",
+      "lastname": "Joplin",
+      "gender": "female",
+      "place": "Jakarta",
+      "dateOfBirth":"1991-04-02"
+    },
+    {
+      "UserId": 4,
+      "firstname": "Enrika",
+      "lastname": "Josskoviz",
+      "gender": "none",
+      "place": "Jakarta",
+      "dateOfBirth":"1981-04-15"
+    },
+    {
+      "UserId": 5,
+      "firstname": "Codee",
+      "lastname": "MacSkeaghan",
+      "gender": "female",
+      "place": "Bandung",
+      "dateOfBirth":"1983-08-17"
+    },
+    {
+      "UserId": 6,
+      "firstname": "Carlyn",
+      "lastname": "Haslehurst",
+      "gender": "female",
+      "place": "Surabaya",
+      "dateOfBirth":"1998-01-09"
+    },
+    {
+      "UserId": 7,
+      "firstname": "Cornie",
+      "lastname": "Burkinshaw",
+      "gender": "male",
+      "place": "Jakarta",
+      "dateOfBirth":"1990-08-06"
+    },
+    {
+      "UserId": 8,
+      "firstname": "Joela",
+      "lastname": "Norcliff",
+      "gender": "female",
+      "place": "Bandung",
+      "dateOfBirth":"1999-05-21"
+    },
+    {
+      "UserId": 9,
+      "firstname": "Weidar",
+      "lastname": "Fakes",
+      "gender": "male",
+      "place": "Bogor",
+      "dateOfBirth":"1997-06-04"
+    },
+    {
+      "UserId": 10,
+      "firstname": "Flossie",
+      "lastname": "Sorey",
+      "gender": "female",
+      "place": "Bekasi",
+      "dateOfBirth":"1997-01-16"
+    },
+    {
+      "UserId": 11,
+      "firstname": "Glossie",
+      "lastname": "Storey",
+      "gender": "female",
+      "place": "Bekasi",
+      "dateOfBirth":"1997-01-16"
+    }
+  ]
+}

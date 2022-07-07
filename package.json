@@ -1,0 +1,33 @@
+{
+  "name": "chp7",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dbCreate": "npx sequelize db:create",
+    "dbDrop": "npx sequelize db:drop",
+    "migrate": "npx sequelize db:migrate",
+    "migrateUndo": "npx sequelize db:migrate:undo:all",
+    "seed": "npx sequelize db:seed",
+    "seedUsers": "npx sequelize db:seed --seed 20220707022033-seed-user.js",
+    "seedUndo": "npx sequelize db:seed:undo:all"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.2"
+  },
+  "description": "initial push",
+  "main": "app.js",
+  "keywords": [],
+  "author": "Narinda Giriputra",
+  "license": "ISC",
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  }
+}
