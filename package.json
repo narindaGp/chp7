@@ -7,9 +7,9 @@
     "dbCreate": "npx sequelize db:create",
     "dbDrop": "npx sequelize db:drop",
     "migrate": "npx sequelize db:migrate",
-    "undoMigrate": "npx sequelize db:migrate:undo:all",
+    "migrateUndo": "npx sequelize db:migrate:undo:all",
     "seed": "npx sequelize db:seed",
-    "undoSeed": "npx sequelize db:seed:undo:all"
+    "seedUndo": "npx sequelize db:seed:undo:all"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

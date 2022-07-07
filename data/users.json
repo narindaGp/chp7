@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+        "username": "admin",
+        "email": "admin@binar.fsw",
+        "password": "admin",
+        "role": "admin",
+        "isSuperAdmin": "true"
+        }, 
+        {
+        "username": "binarian",
+        "email": "binarian@binar.fsw",
+        "password": "berbinar",
+        "role": "admin"
+        }, 
+        {
+        "username": "lbarnewille1",
+        "email": "lbarnewille1@so-net.ne.jp",
+        "password": "cjppzHP9Bh",
+        "role": "vip"
+        }, 
+        {
+        "username": "odrohane2",
+        "email": "odrohane2@reddit.com",
+        "password": "dnFQDQ",
+        "role": "user"
+        }, 
+        {
+        "username": "fapdell3",
+        "email": "fapdell3@cbc.ca",
+        "password": "CZcwfnxHmgv",
+        "role": "vip"
+        }, 
+        {
+        "username": "mbushell4",
+        "email": "mbushell4@google.nl",
+        "password": "lx4J7fZ",
+        "role": "user"
+        }, 
+        {
+        "username": "dposnett5",
+        "email": "dposnett5@oaic.gov.au",
+        "password": "kfhEksUD",
+        "role": "user"
+        }, 
+        {
+        "username": "fferreli6",
+        "email": "fferreli6@over-blog.com",
+        "password": "LgaWwtnInk",
+        "role": "user"
+        }, 
+        {
+        "username": "gkubica7",
+        "email": "gkubica7@trellian.com",
+        "password": "CGYWwK8z75G",
+        "role": "vip"
+        }, 
+        {
+        "username": "flaugier8",
+        "email": "flaugier8@skyrock.com",
+        "password": "3y10IU6",
+        "role": "vip"
+        }, 
+        {
+        "username": "pshelsher9",
+        "email": "pshelsher9@epa.gov",
+        "password": "UMNUxI",
+        "role": "user"
+        }
+    ]
+
+}
