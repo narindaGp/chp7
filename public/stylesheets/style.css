@@ -137,12 +137,21 @@ nav {
 }
 
 .vignete {
-  /* background-image: url(/images/top-score-bg.png); */
   background-size: cover;
   z-index: -999;
   max-width: 100vw;
   height: 100vh;
   box-shadow: 35vw 10vh 10vw 15vh rgba(0, 0, 0, 0.849) inset;
+}
+
+.vignete1 {
+  background-image: url(/images/top-score-bg.png);
+  background-size: cover;
+  z-index: -999;
+  max-width: 100vw;
+  height: 100vh;
+  box-shadow: -35vw 1vh 10vw 15vh rgba(0, 0, 0, 0.849) inset;
+
 }
 
 .reflect {
@@ -213,12 +222,31 @@ nav {
 }
 
 .scard-pict .after-image {
-  background-color: goldenrod;
+  /* background-color: goldenrod; */
   width: 140%;
   height: 90%;
   border-radius: 50%;
   margin-top: 3px;
-  z-index: 3;
+  /* z-index: 3; */
+}
+
+.over-the-top {
+  z-index: 10000000;
+}
+
+.image-relative {
+  position: relative;
+  top: -105%;
+}
+
+.circle-shadow {
+  background-color: goldenrod;
+  border-radius: 50%;
+  /* margin-top: 3px; */
+  z-index: 1;
+  position: relative;
+  top: 0%;
+  bottom: 30px;
 }
 
 .scard-pict img {
@@ -312,7 +340,9 @@ hr {
     align-items: center;
   }
 
-
+  .after-image {
+    background-image: url(../images/);
+  }
 
   .scard-pict .after-image {
     background-color: goldenrod;
