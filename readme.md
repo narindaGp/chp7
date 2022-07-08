@@ -54,3 +54,9 @@ npx sequelize-cli model:generate --name Game_History --attributes UserId:integer
 ```terminal
 npx sequelize seed:create --name seed-user
 ```
+
+kukuh
+yt figma
+artikel medium dan mm group
+
+app uxcel
