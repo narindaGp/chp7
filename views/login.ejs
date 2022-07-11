@@ -15,14 +15,24 @@
       
                     <form action="/login" method="post">
                         <!-- <div class="form-floating"> -->
-                        <div class="">
-                            <label class="form-label" for="formControlReadonly">Email</label>
-                            <input placeholder="Your username" class="form-control" type="text" name="username"><br>
-                        
-                            <label class="form-label" for="formControlReadonly">Password</label> <br>
-                            <input placeholder="Your password" class="form-control" type="password" name="password"><br>
+                        <div class="form-floating m-4">
+                          <input 
+                            class="form-control" 
+                            type="text" 
+                            id="floatUsername" 
+                            name="username" 
+                            placeholder="Your username"
+                          >
+
+                          <label class="text-dark" for="floatUsername">Username</label>
                         </div>
-                        <input type="submit" class="btn btn-outline-light btn-lg px-5" value="Submit">
+
+                        <div class="form-floating m-4">
+                          <input placeholder="Your password" class="form-control" type="password" name="password" id="floatPassword">
+                          <label class="form-label text-dark" for="floatPassword">Password</label> 
+                        </div>
+                        <input type="submit" class="m-5 btn btn-outline-light btn-lg px-5" value="Submit">
+
                         </form>
       
                   </div>
