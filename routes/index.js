@@ -4,7 +4,8 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   const user = {
-    id: ""
+    id: "",
+    isLogin: false
   }
   const player = ""
   res.render('index', { title: 'Express', user, player });
