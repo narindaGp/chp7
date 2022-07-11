@@ -1,0 +1,49 @@
+<%- include('./partials/head.ejs') %>
+<body>
+    
+    <section class="vh-100 gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                    <p class="text-white-50 mb-5">Please enter your login and password!</p>
+      
+                    <form action="/login" method="post">
+                        <!-- <div class="form-floating"> -->
+                        <div class="form-floating m-4">
+                          <input 
+                            class="form-control" 
+                            type="text" 
+                            id="floatUsername" 
+                            name="username" 
+                            placeholder="Your username"
+                          >
+
+                          <label class="text-dark" for="floatUsername">Username</label>
+                        </div>
+
+                        <div class="form-floating m-4">
+                          <input placeholder="Your password" class="form-control" type="password" name="password" id="floatPassword">
+                          <label class="form-label text-dark" for="floatPassword">Password</label> 
+                        </div>
+                        <input type="submit" class="m-5 btn btn-outline-light btn-lg px-5" value="Submit">
+
+                        </form>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<%- include('./partials/script.ejs') %>
+</body>
+</html>
