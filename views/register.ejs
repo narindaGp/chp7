@@ -1,0 +1,38 @@
+<%- include('./partials/head.ejs') %>
+<body>
+    
+  <section class="h-auto min-vh-100 pt-5 gradient-custom d-flex  flex-column align-items-center justify-content-evenly">
+    
+    <h1 class="text-center text-capitalize m-3">welcome to dashboard</h1>
+
+    <div class="bg-light h-100 w-75 p-3 d-flex flex-column justify-content-evenly" id="create">
+
+<form action="register" method="post" class="form-control p-5 mt-5 mb-3 mr-3 ml-3 h-100 d-flex flex-column justify-content-evenly gap-3 " >
+  <h2>Register</h2>
+  
+  <%- include('./partials/floatingInput.ejs', {name: 'username', id: 'floatingUsername', placeholder: 'Username', value: '', type:'text'}) %>
+
+  <%- include('./partials/floatingInput.ejs', {name: 'email', id: 'floatingEmail', placeholder: 'E-mail', value: '', type:'email'}) %>
+  
+  <%- include('./partials/floatingInput.ejs', {name: 'password', id: 'floatingPassword', placeholder: 'Password', value: '', type:'password'}) %>
+  
+  <div class="form-floating w-25 d-none">
+    <select name="role" class="form-select" id="floatingRole">
+      <option value="" disabled>----- OPTION -----</option>
+      <option value="user" selected disabled>User</option>
+    </select>
+    <label for="floatingRole" class="form-label"> Role </label>
+  </div>
+  
+  
+  <button type="submit" class="btn btn-primary w-25 mt-4">Submit</button>
+  
+</form>
+
+</div>
+    
+</section>
+
+<%- include('./partials/script.ejs') %>
+</body>
+</html>
