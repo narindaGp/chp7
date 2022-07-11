@@ -1,0 +1,39 @@
+<%- include('./partials/head.ejs') %>
+<body>
+    
+  <section class="h-auto min-vh-100 pt-5 gradient-custom d-flex  flex-column align-items-center justify-content-evenly">
+    
+    <h1 class="text-center m-3">welcome to dashboard</h1>
+
+    <div class="bg-light h-100 w-75 p-3 d-flex flex-column justify-content-evenly" id="create">
+
+
+<form action="/register/biodata/userId" method="post" class="form-control h-100 d-flex flex-column justify-content-evenly gap-3 " >
+  <h2>Register Biodata</h2>
+
+  <%- include('./partials/floatingInput.ejs', {name: 'firstName', id: 'floatingFirstName', placeholder: 'First Name', value: '', type:'text'}) %>
+  
+  <%- include('./partials/floatingInput.ejs', {name: 'lastName', id: 'floatingLastName', placeholder: 'Last Name', value: '', type:'text'}) %>
+  
+  <div class="form-floating w-25">
+    <select name="gender" class="form-select" id="floatingGender">
+      <option value="" selected disabled>----- OPTION -----</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="none">Non Binary</option>
+    </select>
+    
+    <label for="floatingGender" class="form-label"> Gender </label>
+  </div>
+  
+  <%- include('./partials/floatingInput.ejs', {name: 'dateOfBirth', id: 'floatingDOB', placeholder: 'Date of Birth', value: '', type:'date'}) %>
+  
+  <button type="submit" class="btn btn-primary w-25 mt-4">Submit</button>
+</form>
+</div>
+    
+</section>
+
+<%- include('./partials/script.ejs') %>
+</body>
+</html>
