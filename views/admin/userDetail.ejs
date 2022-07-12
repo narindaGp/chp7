@@ -1,0 +1,79 @@
+<%- include('../partials/formTop.ejs') %>
+
+    <h2> User <%= selectUser.username %> Detail </h2>
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-lg-6 mb-4 mb-lg-0">
+          <div class="card mb-3" style="border-radius: .5rem;">
+            <div class="row g-0">
+              <div class="col-md-4 text-capitalize gradient-custom text-center "
+                style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                
+                <div class="w-100">
+                  <img src="/images/2.png"
+                    alt="Avatar" class="img-fluid w-75 my-5 rounded-circle " />
+
+                </div>
+                <h5><%= selectUser.username %></h5>
+                <p><%= selectUser.role %></p>
+                
+                <i class="far fa-edit mb-5"></i>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-4">
+                
+                  <h4 class="font-weight-bold">Information</h4>
+                  <hr class="mt-0 mb-4">
+                  <div class="row pt-1">
+                    <div class="col-6 mb-3">
+                      <h6>Email</h6>
+                      <p class="text-muted"><%= selectUser.email %></p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>Full Name</h6>
+                      <p class="text-muted text-capitalize"><%= bio.firstname %> <%= bio.lastname %></p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>Gender</h6>
+                      <p class="text-muted"><%= bio.gender %></p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>Age</h6>
+                      <p class="text-muted">age</p>
+                    </div>
+                  </div>
+                  <h4 class="font-weight-bold">Game History</h4>
+                  <hr class="mt-0 mb-4">
+                  <div class="row pt-1">
+
+                    <div class="col-6 mb-3">
+                      <h6>Recent</h6>
+                      <p class="text-muted">Last played</p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6>Score</h6>
+                      <p class="text-muted">score</p>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <h6> Rate </h6>
+                      <p class="text-muted">score/play time</p>
+                    </div>
+
+                  </div>
+                  <div class="d-flex justify-content-start gap-3">
+                    <a href="/dashboard/user/<%= selectUser.id %>/edit/info" class="btn btn-primary text-capitalize"> edit user</a>
+                    <a href="/dashboard/user/<%= bio.id %>/edit/biodata" class="btn btn-primary text-capitalize"> edit biodata</a>
+                    <a href="/logout" class="btn btn-danger text-capitalize"> Log Out</a>
+                  </div>
+                  <% if( selectUser.role == 'admin' ) { %> 
+                  <a href="/admin/users" class="btn btn-warning text-capitalize mt-3"> User List </a>
+                  <% } %> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('../partials/formBottom.ejs') %>
