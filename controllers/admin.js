@@ -23,8 +23,22 @@ const userDetails = async (req, res) => {
   }
 }
 
+const userEdits = async (req, res) => {
+  try {
+    const title = 'User edit';
+    const header = 'User edit';
+    const id = req.params.id;
+    const user = await User.findOne({where: {id}})
+    const bio = await Biodatum.findOne({where: {UserId: id}})
+    res.render('./admin/userEdit', { title, header, user, bio });  
+  } catch (error) {
+    res.send(error)
+  }
+}
+
 
 module.exports = {
   userList,
-  userDetails
+  userDetails,
+  userEdits
 }
