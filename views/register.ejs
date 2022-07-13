@@ -31,7 +31,9 @@
     <label for="floatingGender" class="form-label"> Gender </label>
   </div>
   
-  <%- include('./partials/floatingInput.ejs', {name: 'DOB', value: '', type:'date'}) %>
+  <%- include('./partials/floatingInput.ejs', {name: 'place', value: '', type:'text'}) %>
+
+  <%- include('./partials/floatingInput.ejs', {name: 'dateOfBirth', value: '', type:'date'}) %>
   
   <button type="submit" class="btn btn-primary w-25 mt-4">Submit</button>
   
