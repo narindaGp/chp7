@@ -1,0 +1,42 @@
+<%- include('../partials/formTop.ejs') %>
+
+<form action="admin/user/<%= user.id %> /edit" method="post" class="form-control h-100 d-flex flex-column justify-content-evenly gap-3" >
+  <h2><%= header %></h2>
+  
+  <%- include('../partials/floatingInput.ejs', {name: 'username', value: user.username, type:'text'}) %>
+  
+  <%- include('../partials/floatingInput.ejs', {name: 'password', value: user.password, type:'password'}) %>
+  
+  <div class="form-floating w-25 <%- user.role === 'admin' ? '' :'d-none' ; %>">
+    <select name="role" class="form-select" id="floatingRole">
+      <option value="" selected disabled>----- OPTION -----</option>
+      <option value="user">User</option>
+      <option value="vip">VIP </option>
+    </select>
+    
+    <label for="floatingRole" class="form-label"> Role </label>
+  </div>
+  
+  <%- include('../partials/floatingInput.ejs', {name: 'email', value: user.email, type:'email'}) %>
+
+  <%- include('../partials/floatingInput.ejs', {name: 'firstname', value: bio.firstname, type:'text'}) %>
+  
+  <%- include('../partials/floatingInput.ejs', {name: 'lastname', value: bio.lastname, type:'text'}) %>
+  
+  <div class="form-floating w-25">
+    <select name="gender" class="form-select" id="floatingGender">
+      <option value="" selected disabled>----- OPTION -----</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="none">Non Binary</option>
+    </select>
+    
+    <label for="floatingGender" class="form-label"> Gender </label>
+  </div>
+  
+  <%- include('../partials/floatingInput.ejs', {name: 'DOB', value: bio.dateOfBirth, type:'date'}) %>
+  
+  <button type="submit" class="btn btn-primary w-25 mt-4">Submit</button>
+</form>
+
+<%- include('../partials/formBottom.ejs') %>

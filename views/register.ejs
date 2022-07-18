@@ -2,11 +2,11 @@
 <form action="register" method="post" class="form-control p-5 mt-5 mb-3 mr-3 ml-3 h-100 d-flex flex-column justify-content-evenly gap-3 " >
   <h2>Register</h2>
   
-  <%- include('./partials/floatingInput.ejs', {name: 'username', id: 'floatingUsername', placeholder: 'Username', value: '', type:'text'}) %>
+  <%- include('./partials/floatingInput.ejs', {name: 'username', value: '', type:'text'}) %>
 
-  <%- include('./partials/floatingInput.ejs', {name: 'email', id: 'floatingEmail', placeholder: 'E-mail', value: '', type:'email'}) %>
+  <%- include('./partials/floatingInput.ejs', {name: 'email', value: '', type:'email'}) %>
   
-  <%- include('./partials/floatingInput.ejs', {name: 'password', id: 'floatingPassword', placeholder: 'Password', value: '', type:'password'}) %>
+  <%- include('./partials/floatingInput.ejs', {name: 'password', value: '', type:'password'}) %>
   
   <div class="form-floating w-25 d-none">
     <select name="role" class="form-select" id="floatingRole">
@@ -16,6 +16,24 @@
     <label for="floatingRole" class="form-label"> Role </label>
   </div>
   
+  <%- include('./partials/floatingInput.ejs', {name: 'firstname', value: '', type:'text'}) %>
+  
+  <%- include('./partials/floatingInput.ejs', {name: 'lastname', value: '', type:'text'}) %>
+  
+  <div class="form-floating w-25">
+    <select name="gender" class="form-select" id="floatingGender">
+      <option value="" selected disabled>----- OPTION -----</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="none">Non Binary</option>
+    </select>
+    
+    <label for="floatingGender" class="form-label"> Gender </label>
+  </div>
+  
+  <%- include('./partials/floatingInput.ejs', {name: 'place', value: '', type:'text'}) %>
+
+  <%- include('./partials/floatingInput.ejs', {name: 'dateOfBirth', value: '', type:'date'}) %>
   
   <button type="submit" class="btn btn-primary w-25 mt-4">Submit</button>
   
